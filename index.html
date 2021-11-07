@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>html要素紹介</title>
+        <link href = "styles/styles.css" rel = "stylesheet">
+        <link rel="icon" href="images/logo.png" type="image/x-icon">
+    </head>
+    <body>
+        <h1>&lt; Introduction of HTML elements &gt;</h1>
+        <div class = "introduction">
+            <p>このサイトでは、たくさん存在するhtml要素の中から3つピックアップして紹介しています．
+            <br>
+            また、HTML ( WHATWG Living Standard ) の「 4 The elements of HTML 」を参考にしました．
+            <br>
+            ( 参考：HTML、WHATWG Living Standard、<cite><a href = "https://html.spec.whatwg.org/multipage/#toc-semantics" target= "blank">https://html.spec.whatwg.org/multipage/#toc-semantics</a></cite>
+            、閲覧日：2021/10/31、最終更新日：2021/10/29 )       
+            </p>
+        </div>
+        <div class = "item">
+            <ol>&lt; 目次 &gt;
+                <li><a href = "#strong">strong要素</a></li>
+                <li><a href = "#li">li要素</li>
+                <li><a href = "#span">span要素</li>
+            </ol>
+        </div>
+        <div class = "main_topic">
+            <ol> 
+                <li><a name = "srtong">strong要素</li>
+                strong要素は、記述しているコンテンツを強調するために使われるものです．strong要素を用いる例を次に示します．
+                <br>
+                &lt;index.html&gt;
+                <pre class = "html_code">  
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &emsp;&emsp;&lt;head&gt;<br>
+                &emsp;&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+                &emsp;&emsp;&emsp;&lt;title&gt;strong要素の例&lt;/title&gt;<br>
+                &ensp;&ensp;&ensp;&ensp;&lt;/head&gt;<br>
+                &emsp;&emsp;&lt;body&gt;<br>
+                &emsp;&emsp;&emsp;&lt;p&gt;strong要素は使われていません&lt;br&gt;&lt;strong&gt;strong要素が使われています&lt;/strong&gt;&lt;/p&gt;<br>
+                &emsp;&emsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+                </pre>
+                実行例
+                <br>
+                <img src = "images/strong_element1.png" class = "strong_element"><br>
+
+                &lt;index.html&gt;
+                <pre class = "html_code">  
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &emsp;&emsp;&lt;head&gt;<br>
+                &emsp;&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+                &emsp;&emsp;&emsp;&lt;title&gt;strong要素の例&lt;/title&gt;<br>
+                &ensp;&ensp;&ensp;&ensp;&lt;/head&gt;<br>
+                &emsp;&emsp;&lt;body&gt;<br>
+                &emsp;&emsp;&emsp;&lt;p&gt;数学の課題の提出期限は、&lt;strong&gt;1月1日&lt;/strong&gt;です．&lt;/p&gt;<br>
+                &emsp;&emsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+                </pre>
+                <img src = "images/strong_element2.png" class = "strong_element"><br>
+                上の画像のようにstrong要素で強調したい部分を括ると、文字が太字になります．このようにすることで、webページ内の重要な部分を目立たせることができます．
+
+                <li><a name = "li">li要素</a></li>
+                li要素は、リストの項目を表すために使われるものです．ol,ul,menu要素を親要素として用いられます．li要素を用いる例を次に示します．
+                <h3>ol要素を親要素としたとき</h3>
+                &lt;index.html&gt;
+                <pre class = "html_code">  
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &emsp;&emsp;&lt;head&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;title&gt;li要素の例&lt;/title&gt;<br>
+                &emsp;&emsp;&lt;/head&gt;<br>
+                &emsp;&emsp;&lt;body&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;div&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ol要素を親要素としたとき<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;ol&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;りんご&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;バナナ&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;メロン&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;/ol&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;/div&gt;<br>
+                &emsp;&emsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+                </pre>
+                実行例
+                <br>
+                <img src = "images/li_element1.png" class = "li_element"><br>
+                ol要素を親要素にすると、リストの項目に番号がつきます．
+
+                <h3>ul要素を親要素としたとき</h3>
+                &lt;index.html&gt;
+                <pre class = "html_code">  
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &emsp;&emsp;&lt;head&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;title&gt;li要素の例&lt;/title&gt;<br>
+                &emsp;&emsp;&lt;/head&gt;<br>
+                &emsp;&emsp;&lt;body&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;div&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ul要素を親要素としたとき<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;ul&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;自転車&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;バイク&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;メロン&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;/ul&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;/div&gt;<br>
+                &emsp;&emsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+                </pre>
+                実行例
+                <br>
+                <img src = "images/li_element2.png" class = "li_element"><br>
+                ul要素を親要素にすると、リストの項目に「・」がつきます．
+
+                <h3>menu要素を親要素としたとき</h3>
+                &lt;index.html&gt;
+                <pre class = "html_code">  
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &emsp;&emsp;&lt;head&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;title&gt;li要素の例&lt;/title&gt;<br>
+                &emsp;&emsp;&lt;/head&gt;<br>
+                &emsp;&emsp;&lt;body&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;div&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;menu要素を親要素としたとき<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;menu&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;朝&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;昼&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;夜&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;/menu&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;/div&gt;<br>
+                &emsp;&emsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+                </pre>
+                実行例
+                <br>
+                <img src = "images/li_element3.png" class = "li_element"><br>
+                menu要素を親要素にすると、リストの項目に「・」がつきます．
+
+                <h3>数字や点を消したとき</h3>
+                &lt;index.html&gt;
+                <pre class = "html_code">  
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &emsp;&emsp;&lt;head&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;title&gt;li要素の例&lt;/title&gt;<br>
+                &emsp;&emsp;&lt;/head&gt;<br>
+                &emsp;&emsp;&lt;body&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;div&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;数字や点を消したとき<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;ol style = "list-style: none;"&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;トラ&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;ライオン&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;イノシシ&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;/ol&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;/div&gt;<br>
+                &emsp;&emsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+                </pre>
+                実行例
+                <br>
+                <img src = "images/li_element4.png" class = "li_element"><br>
+                上のプログラムのようにタグ内に「list-style: none;」を書き加える、もしくは、cssで「list-style: none;」を書き加えることで、項目番号や「・」を表示させなくすることができます．
+                
+                <li><a name = "span">span要素</a></li>
+                span要素は、classやlang、dirなどのグローバル属性と共に使用します．そのため、span要素自体は特に意味はありません．
+                <br>
+                &lt;index.html&gt;
+                <pre class = "html_code">  
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &emsp;&emsp;&lt;head&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;title&gt;span要素の例&lt;/title&gt;<br>
+                &emsp;&emsp;&lt;/head&gt;<br>
+                &emsp;&emsp;&lt;body&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;p&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&lt;span style = "background-color: bisque;"&gt;こんにちは&lt;/span&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;/p&gt;<br>
+                &emsp;&emsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+                </pre>
+                実行例
+                <br>
+                <img src = "images/span_element1.png" class = "span_element"><br>
+                
+                &lt;index.html&gt;
+                <pre class = "html_code">  
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &emsp;&emsp;&lt;head&gt;<br>
+                &emsp;&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+                &emsp;&emsp;&emsp;&lt;title&gt;span要素の例&lt;/title&gt;<br>
+                &emsp;&emsp;&lt;/head&gt;<br>
+                &emsp;&emsp;&lt;body&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;ol&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;span　dir = "ltr"&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;ラーメン&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;li&gt;うどん&lt;/li&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;/span&gt;<br>
+                &emsp;&emsp;&emsp;&emsp;&lt;/ol&gt;<br>
+                &emsp;&emsp;&lt;/body&gt;<br>
+                &lt;/html&gt;
+                </pre>
+                実行例
+                <br>
+                <img src = "images/span_element2.png" class = "span_element"><br>
+                今回は、style属性とdir属性を用いてスタイリングと文字列の方向を指定しました．
+            </ol>
+        </div>
+        <footer>
+            日本大学文理学部情報科学科 Webプログラミングの演習課題
+            <br>
+            5420018 髙橋宏季 
+        </footer>
+    </body>
+</html>
